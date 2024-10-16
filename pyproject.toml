@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "api-socket"
+version = "0.1.0"
+description = ""
+authors = ["tiaz0128 <tiaz0128.dev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.2"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+pytest = "^8.3.3"
+aiohttp = "^3.10.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
